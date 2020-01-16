@@ -5,6 +5,8 @@ def handle(req):
     Args:
         req (str): request body
     """
+    return "Python serverless on Unubo Cloud."
+    """
     _server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         print('Server Started')
@@ -29,3 +31,4 @@ def handle(req):
         _server.close()
 
     return "Python serverless on Unubo Cloud."
+    """
