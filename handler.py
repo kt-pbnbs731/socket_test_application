@@ -8,7 +8,7 @@ def handle(req):
     _server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         print('Server Started')
-        _server.bind(('0.0.0.0', 5555))
+        _server.bind(('0.0.0.0', 50001))
         _server.listen(5)
         print('Wait Client ...')
         # 接続待受
