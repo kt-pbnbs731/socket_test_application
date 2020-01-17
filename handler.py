@@ -19,9 +19,6 @@ def handle(req):
         recv_raw_msg = _client.recv(4096)
         recv_msg = recv_raw_msg.decode()
         print('Recv={}'.format(recv_msg))
-        if recv_msg == "end\r\n":
-            break
-
         _client.send(recv_raw_msg)
         _client.close()
     except KeyboardInterrupt:
